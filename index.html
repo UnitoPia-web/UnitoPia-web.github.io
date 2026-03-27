@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitoPia 的 GitHub Pages 测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* 页眉样式 */
+        header {
+            background: linear-gradient(135deg, #1a237e, #3949ab);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* 主体内容样式 */
+        main {
+            flex: 1;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+        .intro h2 {
+            color: #1a237e;
+            border-bottom: 3px solid #3949ab;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #3949ab;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: #1a237e;
+            margin-bottom: 0.8rem;
+        }
+        /* 页脚样式 */
+        footer {
+            background-color: #1a237e;
+            color: #e8eaf6;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #8c9eff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页眉开始 -->
+    <header>
+        <h1>🚀 欢迎来到我的测试页</h1>
+        <p>这是一个用于 GitHub Pages 功能测试的简单页面，由 UnitoPia 创建于 2026 年。</p>
+    </header>
+    <!-- 页眉结束 -->
+
+    <!-- 主体内容开始 -->
+    <main>
+        <section class="intro">
+            <h2>关于此页面</h2>
+            <p>这个页面是一个静态 HTML 模板，用于测试 GitHub Pages 的部署功能。GitHub Pages 可以让你直接从 GitHub 仓库托管静态网站。</p>
+            <p>如果页面正常显示，说明你的 GitHub Pages 已成功运行。你可以随意修改此页面的代码，添加自己的项目、博客或作品集。</p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔧 简单部署</h3>
+                    <p>只需将 HTML、CSS、JS 文件推送到指定分支（如 `main` 或 `gh-pages`），GitHub 会自动构建并发布你的网站。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 完全自定义</h3>
+                    <p>你可以使用此模板作为起点，自由修改样式、添加组件或集成任何前端框架（如 Vue, React）。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🌐 免费托管</h3>
+                    <p>GitHub Pages 为每个账户提供一个免费的 <code>username.github.io</code> 域名，并支持绑定自定义域名。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 主体内容结束 -->
+
+    <!-- 页脚开始 -->
+    <footer>
+        <p>© 2026 - 测试页面 | 托管于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        <p>访问我的 GitHub: <a href="https://github.com/[你的用户名]" target="_blank">github.com/[你的用户名]</a></p>
+        <p><small>最后更新于：2026年3月27日</small></p>
+    </footer>
+    <!-- 页脚结束 -->
+
+    <!-- 可选的简单脚本 -->
+    <script>
+        // 一个简单的控制台日志，用于测试JS是否运行
+        console.log('GitHub Pages 测试页加载成功！');
+
+        // 动态更新年份（可选）
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.querySelector('footer p:first-of-type');
+            if(yearSpan) {
+                yearSpan.innerHTML = yearSpan.innerHTML.replace('2026', new Date().getFullYear());
+            }
+        });
+    </script>
+</body>
+</html>
